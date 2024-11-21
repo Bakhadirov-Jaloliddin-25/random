@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="toggle-dark-mode">Dark/Light</button>
+    </header>
+    <main class="main">
+      <h1 class="title">+998 ** *** ** **</h1>
+      <button class="btn">Start Random</button>
+      <div class="actions">
+        <button id="add-number-btn">Add Number</button>
+        <button id="view-numbers-btn">View Numbers</button>
+      </div>
+    </main>
+    <div id="success-message">Action completed successfully!</div>
+    <div class="modal" id="add-number-modal">
+      <div class="modal-content">
+        <label for="new-number">Enter Phone Number:</label>
+        <input type="text" id="new-number" placeholder="+998 ** *** ** **" />
+        <button id="save-number">Save</button>
+        <button id="close-add-modal">Close</button>
+      </div>
+    </div>
+    <div class="modal" id="view-numbers-modal">
+      <div class="modal-content">
+        <h2>Phone Numbers</h2>
+        <ul id="phone-list"></ul>
+        <button id="close-view-modal">Close</button>
+      </div>
+    </div>
+    <audio class="audio" src="./success-sound.mp3"></audio>
+    <script src="./app.js"></script>
+  </body>
+</html>
